@@ -106,7 +106,6 @@ public class SearchTvShowActivity extends AppCompatActivity implements SearchSho
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 // TODO Auto-generated method stub
                 if (s.toString().contains("\n")){
-                    Toast.makeText(getApplicationContext(),tvshow_name.getText(), Toast.LENGTH_SHORT).show();
                     presenter.getListShows(tvshow_name.getText().toString());
                     tvshow_name.setText("");
                 }
